@@ -155,7 +155,7 @@ double t(double r){
 }
  
  //Defining hypergeometric2F1 for domain outside the unit circle as well as inside, caution that this function will fail (as defined below) when Gamma function is infinity (at 0,-1,-2,....)
- /*double hypg2f1 (double a, double b, double c, double x)
+ double hypg2f1 (double a, double b, double c, double x)
  {
  double y;
  if (x>=-1 && x<=1) {
@@ -166,7 +166,7 @@ double t(double r){
  y=pow(1-x, -a)*((gsl_sf_gamma(c)*gsl_sf_gamma(b-a))/(gsl_sf_gamma(b)*gsl_sf_gamma(c-a)))*gsl_sf_hyperg_2F1(a, c-b, a-b+1, 1/(1-x))+pow(1-x, -b)*((gsl_sf_gamma(c)*gsl_sf_gamma(a-b))/(gsl_sf_gamma(a)*gsl_sf_gamma(c-b)))*gsl_sf_hyperg_2F1(b, c-a, b-a+1, 1/(1-x));}
  
  return y;
- }*/
+ }
 
 double doppler(double r, int i, int j){
     double result;
