@@ -22,7 +22,7 @@
 //int const i=sizeof(theta)/sizeof(theta[0]);
 
 
-/*double const thetaobs=0.5236;
+double const thetaobs=0.5236;
 double const tmin=8.; // The minimum time of the light curve 10^tmin
 double const tmax=10.; // The max time
 double const rmin= 17.;
@@ -296,7 +296,7 @@ void Tarray(){
     
 }
 void Tarray();
- */
+ 
 
 int main (){
    
@@ -304,7 +304,7 @@ int main (){
     struct timeval start_time, stop_time, elapsed_time;
     gettimeofday(&start_time,NULL);
     
-/*    initialize();
+    initialize();
     Tarray();
     int i,j,s,n;
     
@@ -382,7 +382,7 @@ int main (){
         fprintf(filePtr, "%.5g\t%.5g\n", Tobs[s]/(86400*365), F_nutotal[s]);
     }
     fclose(filePtr);
- */
+ 
     printf("i=%d)",imax);
     
     
